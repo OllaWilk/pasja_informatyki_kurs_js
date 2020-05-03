@@ -9,9 +9,26 @@
     <title>Document</title>
 </head>
 <body  onload="odliczanie();" >
+<section class="pierwszy">
     <h1>Kurs JavaScript odc. 1: Skrypty po stronie klienta - pierwszy projekt, wiedza podstawowa</h1>
-    <h2>zegarek</h2>
+    <h3>zegarek</h3>
     <div id="zegar"></div>
+</section>
+<section class="drugi">
+    <h1>Kurs JavaScript odc. 2: Mechanika działania skryptów: uchwyty, funkcje, zdarzenia</h1>
+    <h3>Sprawdzenie wartości liczby podanej przez użytkownika. Z testu na technika informatyka Egzamin-E13 </h3>
+    <div class="pole_edycji">
+        <input type="text" id = "pole"/>
+        <input type="submit" value="Sprawdź" onclick="sprawdz();" />
+        <div id="wynik"></div>
+    </div>
+    <div class="pole_wypiszLiczby">
+        <input type="text" id = "poleMniejszaLiczba"/>
+        <input type="text" id = "poleWiekszaLiczba"/>
+        <input type="submit" value="Wypisz" onclick="sprawdz();" />
+        <div id="wynikDwa"></div>
+    </div>
+</section>
 <script type="text/JavaScript" src="js/script.js"></script>
 </body>
 </html>
