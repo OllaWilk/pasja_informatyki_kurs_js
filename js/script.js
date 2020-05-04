@@ -36,3 +36,18 @@ function sprawdz () {
 
 /*ZADANIE 3 pokazanie ciągu cyfr zaczynając od pole po lewej do prawej*/
 
+function wypisz() {
+
+    let liczba1 = document.getElementById("poleMniejszaLiczba").value;
+    let liczba2 = document.getElementById("poleWiekszaLiczba").value;
+    let napis = '';
+
+    for(i= liczba1; i <=liczba2; i ++) {
+        napis = napis + i + ' ';
+    }
+
+    if(liczba1>liczba2) document.getElementById('wynikDwa').innerHTML="liczba pierwsza musi być większa od liczby drugiej";
+    else if (liczba1 == liczba2) document.getElementById('wynikDwa').innerHTML = "liczby są równe";
+    else document.getElementById('wynikDwa').innerHTML = napis;
+
+}
